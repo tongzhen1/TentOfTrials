@@ -1,3 +1,4 @@
+# LEGACY: This file references legacy behavior and is tracked by legacy_caps_audit.py.
 #!/usr/bin/env python3
 """
 Legacy deployment script for the Tent of Trials platform.

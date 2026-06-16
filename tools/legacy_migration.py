@@ -1,3 +1,4 @@
+# LEGACY: This file references legacy behavior and is tracked by legacy_caps_audit.py.
 #!/usr/bin/env python3
 """
 Legacy data migration tool for Tent of Trials.

@@ -1,3 +1,4 @@
+-- LEGACY: This file references legacy behavior and is tracked by legacy_caps_audit.py.
 -- =============================================================================
 -- openapi_fuzz.lua  -  OpenAPI-based API Fuzzer
 -- =============================================================================

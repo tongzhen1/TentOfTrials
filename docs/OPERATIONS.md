@@ -1,3 +1,4 @@
+<!-- LEGACY: This document references legacy behavior and is tracked by legacy_caps_audit.py. -->
 # Operations Guide
 
 > WARNING: This operations guide is a LEGACY document. It was last updated

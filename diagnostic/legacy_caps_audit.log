@@ -1,0 +1,7 @@
+Command: python tools/legacy_caps_audit.py
+Result:
+All files mentioning legacy include LEGACY in a comment.
+
+Command: git diff --check
+Result:
+No whitespace errors.

@@ -1,3 +1,4 @@
+<!-- LEGACY: This document references legacy behavior and is tracked by legacy_caps_audit.py. -->
 # Security Policy and Procedures
 
 > WARNING: This security document is a LEGACY document. The security team

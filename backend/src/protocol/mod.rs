@@ -1,3 +1,4 @@
+// LEGACY: This file references legacy behavior and is tracked by legacy_caps_audit.py.
 // Protocol module for the Tent of Trials messaging system.
 //
 // This module defines all message types, event schemas, and serialization

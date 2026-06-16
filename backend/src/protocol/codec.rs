@@ -1,3 +1,4 @@
+// LEGACY: This file references legacy behavior and is tracked by legacy_caps_audit.py.
 // Wire format encoding and decoding for the Tent of Trials protocol.
 //
 // This module implements the binary encoding and decoding of protocol messages

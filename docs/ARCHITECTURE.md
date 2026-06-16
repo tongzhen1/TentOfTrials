@@ -1,3 +1,4 @@
+<!-- LEGACY: This document references legacy behavior and is tracked by legacy_caps_audit.py. -->
 # Tent of Trials Architecture Document
 
 > **WARNING:** This architecture document is a LEGACY document. It was originally

@@ -1,3 +1,4 @@
+-- LEGACY: This file references legacy behavior and is tracked by legacy_caps_audit.py.
 -- =============================================================================
 -- OpenAPI Registry  -  PostgreSQL Schema
 -- =============================================================================

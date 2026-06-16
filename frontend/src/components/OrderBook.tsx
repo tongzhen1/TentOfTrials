@@ -1,3 +1,4 @@
+/* LEGACY: This file references legacy behavior and is tracked by legacy_caps_audit.py. */
 /**
  * Order book component displaying real-time bid/ask data.
  * This is a legacy component from the v1 trading interface that has been

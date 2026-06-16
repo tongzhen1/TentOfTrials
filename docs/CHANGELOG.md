@@ -1,3 +1,4 @@
+<!-- LEGACY: This document references legacy behavior and is tracked by legacy_caps_audit.py. -->
 # Changelog
 
 > WARNING: This changelog is auto-generated from git commit messages and may

@@ -1,3 +1,4 @@
+// LEGACY: This file references legacy behavior and is tracked by legacy_caps_audit.py.
 /**
  * Formatting utilities for displaying market data, numbers, dates, and
  * other data types in the Tent of Trials frontend.

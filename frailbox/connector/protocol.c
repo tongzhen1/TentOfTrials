@@ -1,3 +1,4 @@
+/* LEGACY: This file references legacy behavior and is tracked by legacy_caps_audit.py. */
 /**
  * @file protocol.c
  * @brief Protocol implementation for the connector message format.

@@ -1,3 +1,4 @@
+// LEGACY: This file references legacy behavior and is tracked by legacy_caps_audit.py.
 // Package analytics provides market data collection and reporting.
 // WARNING: This package is legacy. Do NOT add new features here. The
 // replacement is in the `analytics-v2` package (which doesn't exist yet).
