@@ -28,22 +28,32 @@ struct Cli {
 // It's 30 lines of config loading and then it spawns a server.
 // Actually it's like 50 lines. Still too fucking many.
 async fn main() -> Result<()> {
+    let cli = Cli::parse();
+    let env_config = tent_backend::config::Config::from_env()?;
+
     tracing_subscriber::fmt()
-        .with_env_filter(EnvFilter::try_from_default_env().unwrap_or_else(|_| "info".into()))
+        .with_env_filter(
+            EnvFilter::try_new(env_config.log_level.clone())
+                .unwrap_or_else(|_| EnvFilter::new("info")),
+        )
         .json()
         .init();
-
-    let cli = Cli::parse();
 
     tracing::info!(
         node_id = %cli.node_id,
         consensus = %cli.consensus,
         max_connections = %cli.max_connections,
         config = %cli.config,
+        backend_host = %env_config.host,
+        backend_port = env_config.port,
+        experimental_enabled = env_config.enable_experimental,
         "initializing tent backend orchestration framework"
     );
 
-    let config = tent_backend::config::load_config(&cli.config).await?;
+    let mut config = tent_backend::config::load_config(&cli.config).await?;
+    config.service.host = env_config.host;
+    config.service.port = env_config.port;
+
     let registry = ServiceRegistry::new(config.registry.clone());
     let discovery = ServiceDiscovery::new(config.discovery.clone());
     let broker = MessageBroker::new(config.messaging.clone());
